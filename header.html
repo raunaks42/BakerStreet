@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Raleway" rel="stylesheet">
+
+
+		<style>
+
+			@font-face
+			{	font-family: "I AM SHERLOCKED";
+                src: url("//db.onlinewebfonts.com/t/574963de8c4a0b1bccf4a932064058ad.eot");
+                src: url("//db.onlinewebfonts.com/t/574963de8c4a0b1bccf4a932064058ad.eot?#iefix") format("embedded-opentype"),
+                url("//db.onlinewebfonts.com/t/574963de8c4a0b1bccf4a932064058ad.woff2") format("woff2"),
+                url("//db.onlinewebfonts.com/t/574963de8c4a0b1bccf4a932064058ad.woff") format("woff"),
+                url("//db.onlinewebfonts.com/t/574963de8c4a0b1bccf4a932064058ad.ttf") format("truetype"),
+                url("//db.onlinewebfonts.com/t/574963de8c4a0b1bccf4a932064058ad.svg#I AM SHERLOCKED") format("svg");
+            }
+
+            body, html
+			{
+				margin: 0;
+				scroll-behavior: smooth;
+				color:#fff;
+				font-family: 'Raleway';
+			}
+			* { box-sizing: border-box; }
+
+			.container
+			{
+				font-size: 20px;
+				font-family:"Cormorant Garamond";
+				text-align: justify;
+			}
+			.center1 
+			{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+			.container2
+			{
+				font-size: 20px;
+				font-family:"Cormorant Garamond";
+				text-align: justify;
+			    background-color: #707471;       
+				color: white;
+				border: 0.1vw solid white;
+				padding-top: 2vw;
+                padding-right:2vw;
+                padding-bottom: 10vw;
+                padding-left: 2vw;
+				
+		
+
+			}
+
+			header { font-family:"I AM SHERLOCKED"; }
+
+			header h1 { margin: 0; }
+
+			.tablink
+			{
+				color:#fff;
+				background-color: #333;
+				float:left;
+				border: none;
+				margin-right:1vw;
+				cursor: pointer;
+				padding: 0.5vw;
+				/*font-size: 30px;*/
+				width: 30%;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+
+			.tablink:hover { background-color: #444; }
+
+			.tablink.active
+			{
+  				background-color: #fff;
+					color: #333;
+			}
+
+			.tabcontent { padding: 5%; }
+
+			.bg
+			{
+				background-image: url("bg.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+
+/*
+			.row { display: flex; }
+
+			.column
+			{
+				flex: 25%;
+				padding: 2%;
+			}
+*/
+
+			.row1::after
+			{
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+			.col1
+			{
+				float: left;
+				width: 12.5%;
+				padding :2%;
+			}
+
+			.col2
+			{
+				float: left;
+				width:55%;
+				padding: 1%;
+			}
+
+            .col23
+			{
+				float: left;
+				width:75%;
+				padding: 1%;
+			}
+
+			.col3
+			{
+				float:left;
+				width:25%;
+				padding:1%;
+			}
+
+			.tablink { padding: 1% 1%; }
+
+			.bg1
+			{
+				background-image: url("parch.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 80vw 100%;
+				
+				color:#333;
+				margin: 2%;
+			}
+			.space
+			{
+			    padding-bottom:25vh;
+			}
+
+			a
+			{
+				text-decoration: none;
+				display: inline-block;
+				padding: 8px 16px;
+			}
+
+			a:hover
+			{
+				background-color: #ddd;
+				color: black;
+			}
+
+			.previous
+			{
+				background-color: #fff;
+				color: black;
+				
+			}
+
+			.round
+			{
+				border-radius: 50%;
+				
+			}
+
+			#about
+			{ 	width:100%;
+				font-family:"Cormorant Garamond";
+				font-size:20px;
+				font-weight:800;
+				text-align:right;
+			}
+
+			#container1
+			{	width:100%;
+				text-align: center;
+				font-family:"Cormorant Garamond";
+				font-size: 50%;
+			}
+
+			#container1 .box { margin:1% 2% 1% 2%; }
+
+			#container1 .box .field
+			{	width:15vw;
+				height: 15vw;
+				text-transform: uppercase;
+				text-align: center;
+                font-size: 5vw;
+				font-family:"I AM SHERLOCKED";
+				margin-right:25px;
+			}
+
+			#container1 .box #field4 { margin-right: 0px; }
+
+			#container1 .box #submit
+			{	border-radius:10px;
+				font-family:"Raleway";
+				font-size: 20px;
+				text-shadow:2px 2px 4px #333;
+				font-weight:800;
+				padding:5px;
+				background-color: #fff;
+			}
+
+			#container1 .box #submit:hover { border:3px solid #bbb; }
+			
+			.name {
+			    padding-bottom : 6vw;
+			    padding-left : 20vw;
+			}
+			
+
+		</style>
+	</head>
+
+	<body class="bg">
+		<header>
+			<h1 align = "center" style="padding-top:20px; padding-bottom:20px;">221 B BAKER STREET</h1>
+		</header>
+		<section id="about">
+			<a id="link" href="about.php" style="color: #fff; text-shadow:2px 2px 4px #333; text-decoration:none; padding:10px;"> ABOUT </a>
+		</section>
